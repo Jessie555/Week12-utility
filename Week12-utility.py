@@ -16,5 +16,16 @@ def UpdateString(string, c , n):
     string1 = string[:n] + c + string[n:]
     print(string1)
 def FindWordCount(string, string1):
-    c = string1.find(string,(len(string)-1))
+    c = string1.count('string')
     print(c)
+def ScoreFinder(players, scores, player):
+    
+    for i in range(len(players)):
+        lower = players[i].lower()
+        print(lower)
+        if (player == players[i]) or (player == lower):
+            break
+    if player in players or player in lower:    
+        print('OUTPUT',player, 'got a score of', scores[i])
+    else:
+        print('OUTPUT player not found')
