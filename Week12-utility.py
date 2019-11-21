@@ -2,7 +2,7 @@
 # Jessie Fehrenbach
 # CSCI 102 - Section C
 # Week 11 - Part B
-
+import string
 def PrintOutput(string):
     print('OUTPUT ', string)
 
@@ -15,3 +15,6 @@ def LoadFile(file):
 def UpdateString(string, c , n):
     string1 = string[:n] + c + string[n:]
     print(string1)
+def FindWordCount(string, string1):
+    c = string1.find(string,(len(string)-1))
+    print(c)
