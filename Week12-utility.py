@@ -22,10 +22,14 @@ def ScoreFinder(players, scores, player):
     
     for i in range(len(players)):
         lower = players[i].lower()
-        print(lower)
         if (player == players[i]) or (player == lower):
             break
     if player in players or player in lower:    
         print('OUTPUT',player, 'got a score of', scores[i])
     else:
         print('OUTPUT player not found')
+def Union(list1, list2):
+    final = list1 + list2
+    return final
+
+    
