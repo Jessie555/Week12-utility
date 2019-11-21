@@ -11,4 +11,7 @@ def LoadFile(file):
     with open(file, 'r') as f:
         newlist = f.read()
         lines.append(newlist)
-        
+        print('OUTPUT ', lines)
+def UpdateString(string, c , n):
+    string1 = string[:n] + c + string[n:]
+    print(string1)
